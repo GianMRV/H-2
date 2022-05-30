@@ -6,9 +6,16 @@
  * 
  * output => 2   
  */
+
 let arr = ["foo","bar","baz","qux","echo"];
 let result = 0;
+for (let i in arr){
+    if (arr[i][0] === "b"){
+        result += 1;
+    }  
+}
 
+console.log(result)
 
 //export result
 module.exports = result;
